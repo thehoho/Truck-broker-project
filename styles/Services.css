@@ -118,16 +118,6 @@
   #services .card-text {
     width: 305px;
   }
-}
-
-@media screen and (max-width: 480px) {
-  #services .flex {
-    flex: auto;
-    gap: 10px;
-  }
-  #services img {
-    width: 100%;
-  }
   #services .headding {
     text-align: center;
   }
@@ -142,4 +132,15 @@
     bottom: 0;
     background-color: #50b9ce;
   }
+}
+
+@media screen and (max-width: 480px) {
+  #services .flex {
+    flex: auto;
+    gap: 10px;
+  }
+  #services img {
+    width: 100%;
+  }
+
 }
