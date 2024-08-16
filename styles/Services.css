@@ -44,11 +44,6 @@
   justify-content: center;
 }
 
-#services .card-item {
-  width: 100%;
-  max-width: 380px;
-}
-
 #services .card-tab {
   padding-right: 20px;
   padding-bottom: 1px;
@@ -142,5 +137,4 @@
   #services img {
     width: 100%;
   }
-
 }
