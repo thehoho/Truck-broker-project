@@ -1,0 +1,7 @@
+.home .hero {
+	height: 600px; 
+	background-color: #ddd;
+}
+.home .hero .overlay {
+	opacity: 0.3;
+}

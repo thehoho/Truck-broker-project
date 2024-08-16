@@ -1,0 +1,284 @@
+header .top-bar {
+	height: 50px;
+}
+header .top-bar .left-color { 
+	top: 0;
+	left: 0;
+	width: 50%;
+	height: 100%;
+	background-color: #eaedf0;
+}
+header .top-bar .left {
+	flex-grow: 1;
+	background-color: #eaedf0;
+	color: #2C3740;
+}
+
+header .top-bar .left img {
+	margin-right: 12.5px;
+}
+
+header .top-bar .left a {
+	margin-left: 10px;
+	transition: 0.4s;
+}
+header .top-bar .left a:hover {
+	color: #50b9ce;
+	transition: 0.4s;
+}
+
+header .top-bar .right .icon-container {
+	height: 100%;
+	width: auto; 
+	aspect-ratio: 1;
+	border-left: 1px solid #cdd4da;
+	background-color: #eaedf0;
+	transition: 0.4s;
+	display: flex; 
+	align-items: center; 
+	justify-content: center;
+	position: relative;
+}
+header .top-bar .right .icon-container:hover {
+	background-color: #50b9ce;
+	transition: 0.4s;
+}
+
+header .top-bar .right .icon-container .top-icon {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: 20px;
+	height: 20px;
+	margin-top: -10px; 
+	margin-left: -10px;
+	transition: 0.4s;
+}
+header .top-bar .right .icon-container:hover .top-icon {
+	opacity: 0;
+	transition: 0.4s;
+}
+
+header .top-bar .right .icon-container .icon {
+	width: 20px;
+	height: 20px;
+}
+
+
+header .top-bar .right .button {
+	position: relative;
+	border: none;
+	padding-right: 25px;
+}
+	header .top-bar .right .button .triangle {
+		position: absolute;
+		top: 0;
+		right: 0;
+		width: 20px; 
+		height: 100%;
+		width: 0;
+	    height: 0;
+	    border-bottom: 51px solid white; /* The length of the perpendicular sides */
+	    border-left: 20px solid transparent; /* The hypotenuse */
+	}
+
+header .main-header {
+	height: 130px;
+}
+
+header .main-header .right-color {
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	left: 95%;
+	background-color: #314555;
+	height: 45px;
+}
+
+header .main-header .logo-container {
+	margin-right: 60px;
+	max-width: 250px; 
+	width: 100%;
+}
+
+header .main-header .right .top {
+	flex-grow: 1;
+	flex-basis: 0;
+}
+
+header .main-header .right .top .call-us-column {
+	height: 30px; 
+	padding-right: 20px; 
+	border-right: 1px #ddd solid;
+}
+
+header .main-header .right .top .call-us-column img {
+	height: 35px;
+	margin-right: 5px;
+}
+
+header .main-header .right .top .call-us-column .text {
+	font-size: 12px; 
+	color: #2c3740;
+	font-weight: 700;
+	line-height: 15.6px;
+	text-transform: uppercase;
+}
+
+header .main-header .right .top .phone-number-column {
+	padding-left: 20px;
+}
+
+header .main-header .right .top .phone-number-column a {
+	font-size: 30px;
+    color: #2c3740;
+	font-weight: 700;
+	transition: 0.4s;
+}
+header .main-header .right .top .phone-number-column a:hover {
+	color: rgb(77, 176, 196);
+	transition: 0.4s;
+}
+
+header .main-header .right .top .mobile-toggle {
+	background-color: rgb(80, 185, 206); 
+	height: 36px; 
+	width: 36px;
+	cursor: pointer;
+	display: none; 
+	align-items: center; 
+	justify-content: center;
+}
+
+
+header .main-header .right .top .mobile-toggle img {
+	width: 80%;
+}
+
+header .main-header .right nav.desktop {
+	height: 45px;
+	background-color: #314555;
+}
+
+header .main-header .right nav.desktop .triangle {
+	position: absolute;
+	top: 0;
+	left: -34.5px;
+	width: 35px; 
+	height: 100%;
+	width: 0;
+	height: 0;
+	border-bottom: 45px solid #314555; /* The length of the perpendicular sides */
+	border-left: 35px solid transparent; /* The hypotenuse */
+}
+
+header .main-header .right nav.desktop a {
+	font-size: 11px; 
+	color: white;
+	font-weight: 600;
+	text-transform: uppercase;
+	height: 100%;
+	padding-left: 10px; 
+	padding-right: 10px;
+	display: flex; 
+	align-items: center;
+	border-right: 1px rgb(64, 86, 103) solid;
+	transition: 0.4s;
+}
+header .main-header .right nav.desktop a:last-of-type {
+	border-right: none;
+}
+header .main-header .right nav.desktop a:hover {
+    background-color: #2a3b48;
+	transition: 0.4s;
+}
+
+header .main-header .mobile-menu {
+	position: absolute; 
+	z-index: 3;
+	top: 100px; 
+	left: 0;
+	background-color: #314555;
+	height: 0;
+	overflow: hidden;
+	transition-delay: 0.4s;
+	transition-duration: 0.4s;
+}
+header .main-header .mobile-menu.active {
+	transition: 0.4s;
+}
+
+header .main-header .mobile-menu a {
+	height: 35px; 
+	display: flex; 
+	justify-content: center;
+	align-items : center;
+	box-sizing: border-box;
+	color: white; 
+	font-size: 14px; 
+	font-weight: 600;
+	text-transform: uppercase;
+	border-bottom: 1px rgb(64, 86, 103) solid;
+	transition: 0.4s;
+	opacity: 0;
+}
+header .main-header .mobile-menu.active a {
+	transition-delay: 0.4s;
+	transition-duration: 0.4s;
+	opacity: 1;
+}
+
+@media screen and (min-width: 1170px) {
+	header .main-header .right-color {
+		left: 1170px;
+	}
+}
+
+@media screen and (max-width: 820px) {
+	header .top-bar {
+		background-color: #eaedf0;
+	}
+	
+	header .top-bar .left {
+		display: none;
+	}
+	header .top-bar .container {
+		justify-content: flex-end;
+	}
+	
+	header .top-bar .right .button .triangle {
+		display: none;
+	}
+	
+	header .main-header {
+		height: 100px;
+	}
+	
+	header .main-header .right-color {
+		display: none;
+	}
+	
+	header .main-header .right .top .mobile-toggle { 
+		display: flex;
+		transition: 0.4s;
+	}
+		header .main-header .right .top .mobile-toggle img { 
+			transition: 0.4s; 
+		}
+		header .main-header .right .top .mobile-toggle.active img { 
+			transition: 0.4s; 
+			transform: rotate(90deg);
+		}
+	
+	header .main-header .right nav.desktop {
+		display: none;
+	}
+	
+	header .main-header .right .top .call-us-column {
+		display: none;
+	}
+	
+	header .main-header .right .top .phone-number-column {
+		display: none;
+	}
+}
