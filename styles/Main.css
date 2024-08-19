@@ -50,6 +50,19 @@ figure {
   margin: 0;
 }
 
+[class^="icon-"],
+[class*="icon-"] {
+  background-image: url(https://theemon.com/t/transport-html/LivePreview/assets/images/sprite.png);
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  display: inline-block;
+  height: 14px;
+  line-height: 14px;
+  margin-top: 1px;
+  vertical-align: text-top;
+  width: 14px;
+}
+
 .container {
   width: 100%;
   max-width: 1300px;
@@ -148,6 +161,16 @@ figure {
 }
 .mb-20 {
   margin-bottom: 20px;
+}
+
+.mx-15 {
+  margin-right: -15px;
+  margin-left: -15px;
+}
+
+.px-15 {
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 .gap-20 {

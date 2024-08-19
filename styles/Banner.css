@@ -1,0 +1,84 @@
+#banner {
+  max-height: 298px;
+  overflow: hidden;
+}
+
+#banner .banner-image {
+  height: 298px;
+  background: url(https://img.freepik.com/free-photo/truck-with-white-trailer-that-says-scania-side_123827-23486.jpg?w=1060&t=st=1723990851~exp=1723991451~hmac=053abe8a1938d5dbf973e479790ed9ccf30b49f23f448909068faebaa8d41300)
+    no-repeat;
+  background-attachment: fixed;
+  background-size: 100%;
+  background-position: left -200.9px;
+}
+
+#banner .banner-text {
+  top: 50%;
+  transform: translateY(-50%);
+  left: 0;
+  right: 0;
+  max-width: 1170px;
+  margin: 0 auto;
+  z-index: 2;
+}
+
+#banner .row {
+  margin-left: -15px;
+  margin-right: -15px;
+}
+
+#banner .shipping {
+  color: #2c3740;
+  font-size: 14px;
+  font-weight: bold;
+  background: #ffffff;
+  width: 162px;
+  text-align: center;
+  padding: 11.5px 15px;
+  transition: all 0.5s ease-in-out 0s;
+}
+
+#banner .shipping::after {
+  border-width: 21px 8px;
+  border-left: 8px solid #ffffff;
+  border-right: 8px solid transparent;
+  border-top: 20px solid transparent;
+  border-bottom: 20px solid #ffffff;
+  content: "";
+  position: absolute;
+  right: -16px;
+  top: 0px;
+  transition: all 0.5s ease-in-out 0s;
+}
+
+#banner h1{
+  font-weight: 900;
+  font-size: 48px;
+  color: #fff;
+  line-height: 1.2;
+  margin-top: 15px;
+  margin-bottom: 0;
+}
+
+@media screen and (max-width: 840px) {
+  #banner .banner-image{
+    background-attachment: initial;
+    background-size: 100% 100%;
+    background-position: left -23.9px;
+  }
+  #banner .shipping::after{
+  border-right: 8.8px solid transparent;
+  border-left: 8.9px solid #ffffff;
+  border-top: 20px solid transparent;
+  border-bottom: 20px solid #ffffff;
+  }
+}
+
+@media screen and (max-width:480px){
+  #banner .row{
+    text-align: center;
+  }
+  #banner .shipping::after{
+    display: none;
+  }
+}
