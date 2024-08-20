@@ -51,7 +51,7 @@
   border-bottom: 1px solid #e0e6ec;
 }
 
-#features .features-icon{
+#features .features-icon {
   margin-top: 30px;
   height: 70px;
   vertical-align: top;
@@ -80,25 +80,24 @@
   line-height: 1.2;
 }
 
-
 @media screen and (max-width: 840px) {
-  #features .flex{
+  #features .features-text {
+    text-align: center;
+  }
+  #features h3::after {
+    right: 0;
+    width: unset;
+  }
+  #features .flex {
     flex-direction: column;
   }
 }
 
-@media screen and (max-width:480px){
-  #features .features-text{
+@media screen and (max-width: 480px) {
+  #features .flex {
     text-align: center;
   }
-  #features h3::after{
-    right: 0;
-    width: unset;
-  }
-  #features .flex{
-    text-align: center;
-  }
-  #features .tab-text{
+  #features .tab-text {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     margin: 0;
     padding: 10px;
