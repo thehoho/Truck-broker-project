@@ -1,0 +1,232 @@
+footer {
+  background: #394650;
+  padding: 91px 0 0px;
+}
+
+footer h5 {
+  text-transform: uppercase;
+  color: #fff;
+  font-weight: 800;
+  position: relative;
+  padding-bottom: 15px;
+  margin-bottom: 37px;
+  letter-spacing: -0.5px;
+  font-size: 18px;
+  line-height: 1.2;
+  margin-top: 0px;
+}
+
+footer h5::after {
+  content: "";
+  background: #50b9ce;
+  width: 34px;
+  height: 1px;
+  display: block;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+footer .px-15 .flex {
+  flex-wrap: wrap;
+}
+
+footer .flex .px-15.contact-us {
+  flex: 0 0 33%;
+}
+
+footer .quick-list ul {
+  list-style-type: none;
+  padding-right: 19px;
+  padding-left: 0px;
+  margin-bottom: 0px;
+  margin-top: 0;
+}
+
+footer .quick-list li {
+  border-bottom: 1px solid #42505b;
+}
+
+footer .quick-list a {
+  display: block;
+  color: #99abb8;
+  text-transform: uppercase;
+  font-size: 14px;
+  padding: 12px 0 10px;
+  transition: 1s al ease;
+}
+
+footer .address {
+  font-size: 15px;
+  color: #8494a0;
+  padding-top: 13px;
+}
+
+footer h6 {
+  text-transform: uppercase;
+  color: #fff;
+  font-size: 15px;
+  margin-bottom: 8px;
+  font-weight: bold;
+  margin-top: 0px;
+  line-height: 1.2;
+}
+
+footer address {
+  line-height: 1.7;
+  margin-bottom: 24px;
+  font-size: 15px;
+}
+
+footer .contact-info span {
+  color: #ffffff;
+  display: block;
+  text-transform: capitalize;
+  letter-spacing: -0.6px;
+  margin-bottom: 4px;
+  font-size: 15px;
+}
+
+footer .contact-info a {
+  background-color: transparent;
+  color: #8494a0;
+  text-transform: none;
+}
+
+footer .px-15.newsletter-flex {
+  flex: 0 0 25%;
+}
+
+footer p {
+  display: block;
+  padding-top: 11px;
+  font-size: 15px;
+  line-height: 1.6;
+  color: #8494a0;
+  margin: 0 0 10px;
+}
+
+footer form {
+  margin-top: 31px;
+  position: relative;
+  box-sizing: border-box;
+}
+
+footer input {
+  background: #4f5f6c;
+  border: 0;
+  padding: 13px 65px 13px 20px;
+  font-size: 15px;
+  margin: 0;
+  font: inherit;
+  color: inherit;
+  line-height: inherit;
+  position: relative;
+}
+
+footer .newsletter button {
+  width: 53px;
+  border: 0;
+  height: 44px;
+  font-size: 23px;
+  position: absolute;
+  right: 0px;
+  top: 0;
+  text-align: center;
+  transition: 1s all ease;
+  padding: 0;
+  cursor: pointer;
+  text-transform: none;
+  margin: 0;
+  background-color: white;
+}
+
+footer .newsletter button img {
+  width: 30px;
+  object-fit: cover;
+  vertical-align: middle;
+  filter: contrast(30%);
+  transition: filter 1s ease;
+}
+
+footer .newsletter button:hover img {
+  filter: contrast(100%) invert(100%);
+}
+
+footer .newsletter button:hover {
+  background-color: #394650;
+  transition: 1s all ease;
+}
+
+footer .bottom {
+  border-top: 1px solid #35414c;
+  margin-top: 74px;
+  padding-bottom: 10px;
+  flex-wrap: nowrap;
+}
+
+footer .bottom .left {
+  color: #8899a6;
+  font-size: 15px;
+}
+
+footer .left a {
+  color: #fff;
+}
+
+footer .right ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+footer .right ul li {
+  display: inline-block;
+  margin-left: 10px;
+  margin-bottom: 0;
+  padding-bottom: 0;
+  text-transform: uppercase;
+}
+
+footer .right ul a {
+  display: block;
+  color: #798995;
+  text-transform: capitalize;
+  font-size: 15px;
+  padding: 15px 11px;
+  transition: 1s all ease;
+  letter-spacing: -0.3px;
+}
+
+@media screen and (max-width: 840px) {
+  footer {
+    text-align: center;
+  }
+  footer h5 {
+    text-align: center;
+  }
+  footer h5::after {
+    width: unset;
+    right: 0;
+  }
+  footer .mx-15 .flex {
+    flex-direction: column;
+    gap: 60px;
+  }
+  footer .mx-15 .px-15 .flex {
+    gap: unset;
+    width: 100%;
+  }
+  footer .quick-list {
+    width: 100%;
+  }
+  footer .newsletter input {
+    width: 78%;
+  }
+  footer .bottom {
+    padding-top: 20px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+}
