@@ -134,10 +134,10 @@
 }
 
 @media screen and (max-width: 840px) {
-  #team .heading{
+  #team .heading {
     text-align: center;
   }
-  #team h3::after{
+  #team h3::after {
     width: unset;
     right: 0;
   }
