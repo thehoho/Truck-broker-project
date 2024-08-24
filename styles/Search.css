@@ -3,7 +3,7 @@
 }
 
 #search .results-container h2{
-  display: inline;
+  font-size: 10px;
 }
 
 #search .filter-container {
@@ -54,6 +54,10 @@
   background-color: #287e90;
 }
 
+#search .clear-btn:hover{
+  background-color: red;
+}
+
 #search .results-container {
   opacity: 0;
   transition: opacity 0.5s ease-in-out;
@@ -65,12 +69,15 @@
 
 #search .result-item {
   background:  #ecf0f1;
-  margin: 1px ;
+  margin: 0px;
   padding: 0px 10px;
   border-radius: 8px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   transition: background-color 0.3s ease;
   color: #34495e;
+  font-size: 12px;
+  height: 40px;
+  text-align: left;
 }
 
 #search .result-item:hover {
@@ -84,5 +91,45 @@ background-color: #7b8ea148;
 }
 
 #search .truck-info{
-  justify-content: space-between;
+  width: 90%;
+justify-content: flex-start;
+}
+
+#search .truck-info h3{
+flex: 0 0 20%;
+}
+#search .truck-info p{
+flex: 0 0 30%;
+}
+
+#search .modal {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Overlay */
+  justify-content: center;
+  align-items: center;
+}
+
+/* Modal content */
+#search .modal-content {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+/* Modal buttons */
+#search .modal-buttons {
+  margin-top: 20px;
+}
+
+#search .modal-buttons button {
+  margin: 0 10px;
+  padding: 10px 20px;
+  cursor: pointer;
 }
