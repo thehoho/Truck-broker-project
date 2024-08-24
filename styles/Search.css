@@ -1,5 +1,10 @@
-#search .filter-container h1, .results-container h2{
+#search .filter-container h1,
+.results-container h3 {
   color: #ecf0f1;
+}
+
+#search .results-container h2{
+  display: inline;
 }
 
 #search .filter-container {
@@ -96,7 +101,7 @@
   background-color: #c82333; /* Darker red on hover */
 }
 
-#search .flex button{
+#search .flex button {
   padding: 8px 12px;
   background-color: #007bff;
   color: #fff;
@@ -106,7 +111,11 @@
   transition: background-color 0.3s ease;
 }
 
-#search .flex{
+#search .flex {
   justify-content: center;
   gap: 20px;
+}
+
+#search .truck-info{
+  justify-content: space-between;
 }
