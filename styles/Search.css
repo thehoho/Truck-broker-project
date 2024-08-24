@@ -1,5 +1,4 @@
-#search .filter-container h1,
-.results-container h3 {
+#search .filter-container h1 {
   color: #ecf0f1;
 }
 
@@ -17,7 +16,6 @@
 
 #search .filters {
   display: flex;
-  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
 }
@@ -25,7 +23,7 @@
 #search .filters select,
 .filters input {
   margin: 5px 10px;
-  padding: 10px;
+  padding: 10px ;
   width: 160px;
   border: 1px solid #ddd;
   border-radius: 4px;
@@ -40,20 +38,20 @@
   box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
 }
 
-#search .filters button {
+#search .filters button, .flex-btn button {
   margin: 5px 10px;
-  padding: 10px 20px;
+  padding: 10px 5px;
   border: none;
   border-radius: 4px;
-  background-color: #007bff;
+  background-color: #50b9ce;
   color: #fff;
-  font-size: 16px;
+  font-size: 14px;
   cursor: pointer;
   transition: background-color 0.3s ease;
 }
 
-#search .filters button:hover {
-  background-color: #0056b3;
+#search .filters button:hover, .flex-btn button:hover {
+  background-color: #287e90;
 }
 
 #search .results-container {
@@ -66,54 +64,23 @@
 }
 
 #search .result-item {
-  background: #34495e;
-  margin: 10px 0;
-  padding: 15px;
+  background:  #ecf0f1;
+  margin: 1px ;
+  padding: 0px 10px;
   border-radius: 8px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease;
-  color: #ecf0f1;
+  transition: background-color 0.3s ease;
+  color: #34495e;
 }
 
 #search .result-item:hover {
-  transform: scale(1.05);
+background-color: #7b8ea148;
 }
 
-#search .result-item button {
-  padding: 8px 12px;
-  background-color: #007bff;
-  color: #fff;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-}
-
-#search .result-item button.marked {
-  background-color: #dc3545; /* Red background for unmarking */
-}
-
-#search .result-item button:hover {
-  background-color: #0056b3; /* Darker blue on hover */
-}
-
-#search .result-item button.marked:hover {
-  background-color: #c82333; /* Darker red on hover */
-}
-
-#search .flex button {
-  padding: 8px 12px;
-  background-color: #007bff;
-  color: #fff;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-}
-
-#search .flex {
+#search .flex-btn {
   justify-content: center;
-  gap: 20px;
+  gap: 10px;
+  margin-top: 10px;
 }
 
 #search .truck-info{

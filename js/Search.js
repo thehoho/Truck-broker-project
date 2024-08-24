@@ -53,14 +53,16 @@ function displayResults(filteredVehicles) {
     vehicleElement.classList.add("result-item");
     const isMarked = markedTrucks.includes(vehicle.id);
     vehicleElement.innerHTML = `
-          <div class="flex align-center truck-info"
-          <p><h3>${vehicle.type} - ${vehicle.year} </h3>  Make: ${vehicle.make} | Price: $${vehicle.price} | Location: ${vehicle.location}</p>
-          <button onclick="toggleMark(${vehicle.id})" class="${
-            isMarked ? "marked" : ""
-          } ">
-                ${isMarked ? "⭐ Unmark" : "⭐ Mark as Interested"}
-            </button>
-            </div>
+  <div class="flex align-center truck-info">
+          <h3>${vehicle.type} - ${vehicle.year}</h3> <p>Make: ${
+        vehicle.make
+        } | Price: $${vehicle.price} | Location: ${vehicle.location}<p>
+          <input type="checkbox" id="vehicle-${
+            vehicle.id
+          }" class="mark-checkbox" onclick="toggleMark(${vehicle.id})" ${
+      isMarked ? "checked" : ""
+    }>
+        </div>
    
       `;
     resultsContainer.appendChild(vehicleElement);
@@ -74,15 +76,12 @@ function toggleMark(vehicleId) {
   let markedTrucks = JSON.parse(localStorage.getItem("markedTrucks")) || [];
 
   if (markedTrucks.includes(vehicleId)) {
-    // Unmark the truck
-    markedTrucks = markedTrucks.filter((id) => id !== vehicleId);
+    markedTrucks = markedTrucks.filter((id) => id !== vehicleId); // Unmark the vehicle
   } else {
-    // Mark the truck
-    markedTrucks.push(vehicleId);
+    markedTrucks.push(vehicleId); // Mark the vehicle
   }
 
   localStorage.setItem("markedTrucks", JSON.stringify(markedTrucks));
-  applyFilters(); // Refresh the displayed list to update the button state
 }
 
 // Function to view marked trucks
