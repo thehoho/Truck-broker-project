@@ -7,7 +7,7 @@
 }
 
 #search .filter-container {
-  background: #34495e;
+  background: #314555;
   padding: 15px;
   border-radius: 8px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
@@ -38,7 +38,7 @@
   box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
 }
 
-#search .filters button, .flex-btn button {
+#search .flex-btn button {
   margin: 5px 10px;
   padding: 10px 5px;
   border: none;
@@ -99,7 +99,7 @@ justify-content: flex-start;
 flex: 0 0 20%;
 }
 #search .truck-info p{
-flex: 0 0 30%;
+flex: 0 0 50%;
 }
 
 #search .modal {
