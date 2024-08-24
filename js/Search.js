@@ -1,4 +1,4 @@
-document.addEventListener("DOMContentLoaded", function () {
+
   const vehicles = [
     {
       id: 1,
@@ -131,4 +131,4 @@ document.addEventListener("DOMContentLoaded", function () {
 
   // Initial call to display all vehicles
   applyFilters();
-});
+
